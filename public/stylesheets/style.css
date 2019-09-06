@@ -15,13 +15,6 @@ h1, p.date, p.news__p {
   text-align: justify;
 }
 
-input{
-  font-size: 26px;
-  height: 35px;
-  width: 300px;
-  border: 1px solid black;
-}
-
 nav.nav{
   background-color: rgb(13, 142, 165);
   display: flex;
@@ -30,10 +23,6 @@ nav.nav{
   align-items: center;
   width: 100%;
   height: 10vh;
-}
-
-.active{
-  color:yellow;
 }
 
 .nav ul{
