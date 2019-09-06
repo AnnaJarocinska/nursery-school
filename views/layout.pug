@@ -1,0 +1,21 @@
+doctype html
+mixin navItem (title, url)
+  li(class='list-item')
+    a(href=url class=`item ${path == url ? 'active' : ''}`)=title
+
+
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    nav(class="nav")
+      ul
+        +navItem("Strona główna", "/")
+        +navItem("Aktualności", "/news")
+        +navItem("Ankieta", "/questionnaire")
+        +navItem("Panel Pracownika", "/employee")
+        +navItem("Panel Rodzica", "/parents")
+  
+
+    block content
