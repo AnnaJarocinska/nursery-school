@@ -1,8 +1,10 @@
 extends layout
 
 block content
+ div(class="container")
   h1= title
   if show
+   div(class="form")
     form(method='post')
       p Co przedszkolaki lubią najbardziej?
       ul
@@ -10,7 +12,7 @@ block content
           li 
             label=item.title
             input(type='radio' name='quiz' value=item._id)
-      input(type='submit' value='Zagłosuj')
+      input(type='submit' value='Zagłosuj' class="button")
       p Aby zobaczyć wyniki oddaj głos
   else
     h1 Dokonałeś już głosu w ankiecie

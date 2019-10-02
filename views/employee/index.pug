@@ -1,12 +1,14 @@
 extends ../layout
 
 block content
+ div(claass="container")
   h1= title
   nav
     ul
       li
         a(href="employee/news/add") Dodaj
-  table
+  div(class="form")      
+   table
     tr
       th id
       th tytuł

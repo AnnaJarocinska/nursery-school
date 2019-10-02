@@ -9,19 +9,19 @@ router.get('/', (req, res) => {
 });
 
 router.get('/login', (req, res) => {
-  res.render('login', { title: 'Logowanie do panelu pracownika' });
+  res.render('login', { title: 'Logowanie do Panelu Pracownika' });
 });
 
 router.post('/login', (req, res) => {
- const body = req.body;
-  if(body.login === login && body.password === password){
+  const body = req.body;
+  if (body.login === login && body.password === password) {
 
     req.session.employee = 1;
-    res.redirect('/employee'); 
-  }else{
+    res.redirect('/employee');
+  } else {
 
-  res.redirect('/login');
-}
+    res.redirect('/login');
+  }
 });
 
 /* GET home page. */
@@ -30,19 +30,19 @@ router.get('/', (req, res) => {
 });
 
 router.get('/login2', (req, res) => {
-  res.render('login2', { title: 'Logowanie do panelu Rodzica' });
+  res.render('login2', { title: 'Logowanie do Panelu Rodzica' });
 });
 
 router.post('/login2', (req, res) => {
- const body = req.body;
-  if(body.login === login && body.password === password){
+  const body = req.body;
+  if (body.login === login && body.password === password) {
 
     req.session.parents = 1;
-    res.redirect('/parents'); 
-  }else{
+    res.redirect('/parents');
+  } else {
 
-  res.redirect('/login2');
-}
+    res.redirect('/login2');
+  }
 });
 
 module.exports = router;

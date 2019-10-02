@@ -7,11 +7,48 @@
 }
 
 body{
-  background-color: rgb(216, 248, 250);
+  background-image: url('../images/baloons.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+ 
 }
 
-h1, p.date, p.news__p {
-  margin:30px;
+div.container{
+  background-color: rgba(255, 255, 255, 0.2);
+  height: 100%;
+  margin: 0;
+}
+
+div.form{
+  background-color: rgba(255, 255, 255, 0.4);
+  display: flex;
+  width: 50%;
+  margin:0 auto;
+  align-items: space-around;
+  justify-content: space-around;
+}
+
+p{
+  padding:5px 0;
+}
+
+.button{
+  width: 100%;
+}
+
+label{
+  margin-right: 8px;
+}
+
+h1{
+  padding:30px;
+  text-align: center;
+}
+
+p.date, p.news__p {
+  padding:30px;
   text-align: justify;
 }
 
@@ -35,6 +72,18 @@ nav.nav a {
   color:white;
   font-size: 25px;
   margin: 20px;
+}
+
+ .item.active{
+  color:yellow;
+}
+
+form.search{
+  display: block;
+  position: absolute;
+  left:50%;
+  transform: translateX(-50%);
+  margin-bottom: 200px;
 }
 
 div.main{
